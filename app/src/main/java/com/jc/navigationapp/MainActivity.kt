@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         val count = supportFragmentManager.backStackEntryCount
-        Toast.makeText(this, "Fragment: ${count}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Remove fragment: $count", Toast.LENGTH_SHORT).show()
         super.onBackPressed()
     }
 }
