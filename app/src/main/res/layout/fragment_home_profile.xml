@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvTitle"
         android:text="PROFILE"
         android:textStyle="bold"
         android:textColor="@android:color/white"
@@ -16,6 +17,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="..."
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 

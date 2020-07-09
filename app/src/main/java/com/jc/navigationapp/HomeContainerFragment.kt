@@ -26,4 +26,5 @@ class HomeContainerFragment : Fragment() {
                 ?.commit()
         }
     }
+
 }
