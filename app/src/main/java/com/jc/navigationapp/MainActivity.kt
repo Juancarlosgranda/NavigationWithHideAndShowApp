@@ -2,6 +2,7 @@ package com.jc.navigationapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -43,6 +44,11 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+    }
 
+    override fun onBackPressed() {
+        val count = supportFragmentManager.backStackEntryCount
+        Toast.makeText(this, "Fragment: ${count}", Toast.LENGTH_SHORT).show()
+        super.onBackPressed()
     }
 }

@@ -28,7 +28,7 @@ class HomeFragment :  Fragment() {
     private fun showHomeProfileFragment() {
         fragmentManager?.beginTransaction()
             ?.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right)
-            ?.add(R.id.frame_home_container, HomeProfileFragment())
+            ?.add(R.id.frame_home_container, HomeProfileFragment(), "HomeProfileFragment")
             ?.addToBackStack(null)
             ?.commit()
     }

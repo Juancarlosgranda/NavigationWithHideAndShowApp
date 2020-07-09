@@ -28,7 +28,7 @@ class MenuFragment : Fragment() {
     private fun showNotificationsFragment() {
         fragmentManager?.beginTransaction()
             ?.setCustomAnimations(R.anim.slide_in_right, R.anim.slide_out_left, R.anim.slide_in_left, R.anim.slide_out_right)
-            ?.add(R.id.frame_menu_container, MenuNotificationsFragment())
+            ?.add(R.id.frame_menu_container, MenuNotificationsFragment(), "MenuNotificationsFragment" )
             ?.addToBackStack(null)
             ?.commit()
     }
